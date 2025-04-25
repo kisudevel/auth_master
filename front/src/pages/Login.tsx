@@ -9,6 +9,9 @@ export default function Login() {
   const login = useAuthStore((state) => state.login);
 
   const loginHandler = async () => {
+    // JWT
+    // accesstoken
+    // refreshtoken
     const { data } = await axiosInstance.post("/login", {
       username: "test",
       password: "1234",
